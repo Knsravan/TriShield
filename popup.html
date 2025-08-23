@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>TriShield</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+            <span>TriShield</span>
+        </header>
+        <section class="status">
+            <div id="statusText">Ready</div>
+            <div id="score"></div>
+        </section>
+        <section class="actions">
+            <label class="switch">
+                <input type="checkbox" id="toggle" />
+                <span class="slider"></span>
+                <span class="lbl">Auto-scan</span>
+            </label>
+            <button id="scanBtn" class="btn">Scan current tab</button>
+            <a class="link" id="dashboard">Open Dashboard</a>
+            <a class="link" id="options">Options</a>
+        </section>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
